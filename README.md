@@ -3,6 +3,7 @@
 
 ![](https://github.com/Xiezhichao/CCWebViewController/blob/master/demo.gif)  
 
+
 # Usage
 1、`#import <WebKit/WebKit.h>`<br>
 2、`#import "CCWebViewController.h"`<br>
@@ -17,4 +18,8 @@
 ```
 
 # Enviroment
-iOS7以上
+* iOS7以上
+* WebKit.framework
+
+# Author
+Xiezhichao 1173971152@qq.com
