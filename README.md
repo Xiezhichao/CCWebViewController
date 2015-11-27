@@ -5,8 +5,8 @@
 
 
 # Usage
-1、拖`CCWebViewController`文件夹进工程<br>
-2、
+
+拖`CCWebViewController`文件夹进工程<br>
 ```
     // OC
     #import "CCWebViewController.h
