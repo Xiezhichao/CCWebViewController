@@ -5,7 +5,7 @@
 
 
 # Usage
-1、`#import <WebKit/WebKit.h>`<br>
+1、拖`CCWebViewController`文件夹进工程
 2、`#import "CCWebViewController.h"`<br>
 3、
 ```
