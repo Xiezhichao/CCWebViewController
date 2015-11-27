@@ -1,5 +1,4 @@
-# CCWebViewController
-模仿微信、京东内置网页浏览器，有进度条，适配iOS7以后，swift和OC都有<br>
+###模仿微信、京东内置网页浏览器，有进度条，适配iOS7以后，swift和OC都有<br>
 
 ![](https://github.com/Xiezhichao/CCWebViewController/blob/master/demo.gif)  
 
@@ -21,6 +20,3 @@
 # Enviroment
 * iOS7以上
 * WebKit.framework
-
-# Author
-Xiezhichao 1173971152@qq.com
