@@ -45,7 +45,8 @@ class CCWebViewSController: UIViewController,UIWebViewDelegate,UIActionSheetDele
         
         // 网页
         if #available(iOS 8.0, *) {
-           let wkWebView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height - 64))
+           let wkWebView = WKWebView(frame: self.view.bounds)
+            wkWebView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
             wkWebView.backgroundColor = UIColor.whiteColor()
             wkWebView.navigationDelegate = self
             self.view.insertSubview(wkWebView, belowSubview: progressView)
@@ -55,7 +56,8 @@ class CCWebViewSController: UIViewController,UIWebViewDelegate,UIActionSheetDele
             wkWebView.loadRequest(request)
             self.webView = wkWebView
         }else {
-            let webView = UIWebView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height - 64))
+            let webView = UIWebView(frame: self.view.bounds)
+            webView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
             webView.scalesPageToFit = true
             webView.backgroundColor = UIColor.whiteColor()
             webView.delegate = self

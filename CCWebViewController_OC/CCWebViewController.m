@@ -49,7 +49,8 @@
     
     // 网页
     if (IOS8x) {
-        WKWebView *wkWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 64)];
+        WKWebView *wkWebView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+        wkWebView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
         wkWebView.backgroundColor = [UIColor whiteColor];
         wkWebView.navigationDelegate = self;
         [self.view insertSubview:wkWebView belowSubview:progressView];
@@ -59,7 +60,8 @@
         [wkWebView loadRequest:request];
         self.wkWebView = wkWebView;
     }else {
-        UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 64)];
+        UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+        webView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
         webView.scalesPageToFit = YES;
         webView.backgroundColor = [UIColor whiteColor];
         webView.delegate = self;

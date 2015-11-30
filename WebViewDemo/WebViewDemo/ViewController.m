@@ -15,10 +15,10 @@
 - (IBAction)btnPress:(id)sender {
     
     // OC
-    [CCWebViewController showWithContro:self withUrlStr:@"http://m.jd.com/" withTitle:@"京东"];
+    //[CCWebViewController showWithContro:self withUrlStr:@"http://m.jd.com/" withTitle:@"京东"];
     
     // SWift
-    //[CCWebViewSController showWithContro:self withUrlStr:@"http://m.jd.com/" withTitle:@"京东"];
+    [CCWebViewSController showWithContro:self withUrlStr:@"http://m.jd.com/" withTitle:@"京东"];
 }
 
 @end
